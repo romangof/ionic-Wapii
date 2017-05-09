@@ -1,0 +1,73 @@
+<!--<ion-content padding>
+  The world is your oyster.
+  <p>
+    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+  </p>
+</ion-content>-->
+
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <!-- This should be ngFor at some point -->
+      <!--<ion-col *ngFor="let item of items" col-6>-->
+      <ion-col col-6>
+        <ion-card (click)="itemTapped(id)">
+          <img src="http://placehold.it/100x70/447bf8/ffffff?text=LOGO"/>
+          <ion-card-content>
+            <ion-card-title>
+              Solicitudes
+            </ion-card-title>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col col-6>
+        <ion-card (click)="itemTapped(id)">
+          <img src="http://placehold.it/100x70/447bf8/ffffff?text=LOGO"/>
+          <ion-card-content>
+            <ion-card-title>
+              Próximos Trabajos
+            </ion-card-title>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col col-6>
+        <ion-card (click)="itemTapped(id)">
+          <img src="http://placehold.it/100x70/447bf8/ffffff?text=LOGO"/>
+          <ion-card-content>
+            <ion-card-title>
+              En Proceso
+            </ion-card-title>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col col-6>
+        <ion-card (click)="itemTapped(id)">
+          <img src="http://placehold.it/100x70/447bf8/ffffff?text=LOGO"/>
+          <ion-card-content>
+            <ion-card-title>
+              Transferidas
+            </ion-card-title>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <p>
+    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
+  </p>
+
+  <button ion-button secondary menuToggle>Toggle Menu</button>
+</ion-content>
